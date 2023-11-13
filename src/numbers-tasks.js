@@ -320,8 +320,14 @@ function getSumOfDigits(num) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(/* num */) {
-  throw new Error('Not implemented');
+function isPowerOfTwo(num) {
+  let x = num;
+
+  while (x > 2) {
+    x /= 2;
+  }
+
+  return x === 2;
 }
 
 /**
